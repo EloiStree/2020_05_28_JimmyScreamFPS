@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.eloistree.jimmyscreamfps",                              
+  "displayName": "2020_05_28_JimmyScreamFPS",                        
+  "version": "0.0.2",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Scream like a pig when under 55-60 fps.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"Eloi Strée",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://gitlab.com/EloiStree/2020_05_28_JimmyScreamFPS.git",
+"footprint":"",
+"revision":"5655f2840ea30d32403ff3f136141af716f36be2"},     
+  "category": "Script"                   
+} 
