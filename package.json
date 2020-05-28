@@ -2,7 +2,7 @@
 {                                                                                
   "name": "be.eloistree.jimmyscreamfps",                              
   "displayName": "2020_05_28_JimmyScreamFPS",                        
-  "version": "0.0.2",                         
+  "version": "0.0.1",                         
   "unity": "2018.1",                             
   "unityRelease": "",                             
   "description": "Scream like a pig when under 55-60 fps.",                         
