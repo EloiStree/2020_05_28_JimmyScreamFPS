@@ -6,7 +6,8 @@
   "unityRelease": "",                             
   "description": "Scream like a pig when under 55-60 fps.",                         
   "keywords": ["Script","Tool"],                       
-  "dependencies":{},     
+  "dependencies":{
+    "be.eloistree.license":"0.0.1"},     
   "relatedPackages":{},     
   "samples" : [],     
   "author" : {
