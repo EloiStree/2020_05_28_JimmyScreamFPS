@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,7 +20,6 @@ public class FPSCounterA1 : MonoBehaviour
     [SerializeField] string m_display;
     void Update()
     {
-        FPS = (int)(1f / Time.deltaTime);
         FPS = (int)(1f / Time.unscaledDeltaTime);
         if (fpsBuffer == null || fpsBuffer.Length != m_frameRange)
         {
