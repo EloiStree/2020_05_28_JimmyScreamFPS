@@ -1,4 +1,3 @@
 # Tool License  
-> https://creativecommons.org/licenses/by-nc-sa/4.0/  
-  
-Kiss kiss, love me!
+> From the Asset store: https://unity.com/legal/as-terms
+> From GitHub or OpenUPM: https://github.com/EloiStree/EloiStree/blob/master/LICENSE.md 
