@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+namespace JimmyScreamFPS { 
+
 //
 //Code based on this source: https://catlikecoding.com/unity/tutorials/frames-per-second/
 public class FPSCounterA1 : MonoBehaviour
@@ -72,4 +74,5 @@ public class FPSCounterA1 : MonoBehaviour
         fpsBuffer = new int[m_frameRange];
         m_fpsBufferIndex = 0;
     }
+}
 }

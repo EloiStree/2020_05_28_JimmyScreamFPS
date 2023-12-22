@@ -2,38 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PerfsDestroy : MonoBehaviour
+namespace JimmyScreamFPS
 {
-
-    public GameObject m_prefab;
-    public Transform m_where;
-    public float m_timeOfDestruction=20f;
-    public bool m_useMouse=true;
-    public void Update()
+    public class PerfsDestroy : MonoBehaviour
     {
-        if (m_useMouse) { 
-            if (Input.GetMouseButtonDown(0))
-            {
-                CreateAnInstance();
-            }
-            if (Input.GetMouseButton(1))
-            {
 
-                CreateAnInstance();
-            }
-        }
-    }
-
-    public void CreateAnInstance()
-    {
-        GameObject gamo = GameObject.Instantiate(m_prefab, m_where.position, m_where.rotation);
-        Renderer [] renderer = gamo. GetComponentsInChildren<Renderer>();
-        for (int i = 0; i < renderer.Length; i++)
+        public GameObject m_prefab;
+        public Transform m_where;
+        public float m_timeOfDestruction = 20f;
+        public bool m_useMouse = true;
+        public void Update()
         {
-            if (renderer[i] != null && renderer[i].material != null)
-                renderer[i].material.color = new Color(UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value);
+            if (m_useMouse)
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    CreateAnInstance();
+                }
+                if (Input.GetMouseButton(1))
+                {
 
+                    CreateAnInstance();
+                }
+            }
         }
-        Destroy(gamo, m_timeOfDestruction);
+
+        public void CreateAnInstance()
+        {
+            GameObject gamo = GameObject.Instantiate(m_prefab, m_where.position, m_where.rotation);
+            Renderer[] renderer = gamo.GetComponentsInChildren<Renderer>();
+            for (int i = 0; i < renderer.Length; i++)
+            {
+                if (renderer[i] != null && renderer[i].material != null)
+                    renderer[i].material.color = new Color(UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value);
+
+            }
+            Destroy(gamo, m_timeOfDestruction);
+        }
     }
 }
