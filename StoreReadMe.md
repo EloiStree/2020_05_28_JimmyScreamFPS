@@ -40,6 +40,9 @@ _Include an entry for every version, with the latest changes first._
 
 ## Videos
 
+[![image](https://github.com/EloiStree/2020_05_28_JimmyScreamFPS/assets/20149493/417da88e-fc91-4155-8a32-12aaa6879b90)](https://www.youtube.com/watch?v=lmMwo4egIPU)
+https://www.youtube.com/watch?v=lmMwo4egIPU
+
 ## Screenshots 
 _Upload images (min width 1200px)_
 
