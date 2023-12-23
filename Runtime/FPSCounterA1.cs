@@ -3,76 +3,89 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace JimmyScreamFPS { 
-
-//
-//Code based on this source: https://catlikecoding.com/unity/tutorials/frames-per-second/
-public class FPSCounterA1 : MonoBehaviour
+namespace JimmyScreamFPS
 {
-    public int FPS { get; private set; }
-    public int AverageFPS { get; private set; }
-    public int HighestFPS { get; private set; }
-    public int LowestFPS { get; private set; }
-    [SerializeField] int[] fpsBuffer;
-    [SerializeField] int m_fpsBufferIndex;
-    [SerializeField] int m_frameRange = 60;
 
+    //
+    //Code based on this source: https://catlikecoding.com/unity/tutorials/frames-per-second/
+    public class FPSCounterA1 : MonoBehaviour
+    {
 
-    [SerializeField] Text [] m_displayFps;
-    [SerializeField] string m_display;
-    void Update()
-    {
-        FPS = (int)(1f / Time.unscaledDeltaTime);
-        if (fpsBuffer == null || fpsBuffer.Length != m_frameRange)
-        {
-            InitializeBuffer();
-        }
-        UpdateBuffer();
-        CalculateFPS();
-        m_display = string.Format("{0:000}\t{1:000}\tl {2:00}\t H {3:00}", FPS, AverageFPS, LowestFPS, HighestFPS);
-        for (int i = 0; i < m_displayFps.Length; i++)
-        {
-            if (m_displayFps[i])
-                m_displayFps[i].text = m_display;
-        }
-    }
+        [Tooltip("The number of frame use to estimate the FPS average")]
+        [SerializeField] int m_frameRangeToCaliber = 60;
+        [Tooltip("Quick tool to have a debug log in your game as text")]
+        [SerializeField] Text[] m_debugSupportAsTextForFps;
 
-    void UpdateBuffer()
-    {
-        fpsBuffer[m_fpsBufferIndex++] = (int)(1f / Time.unscaledDeltaTime);
-        if (m_fpsBufferIndex >= m_frameRange)
+        public Debug m_debug = new Debug();
+        [System.Serializable]
+        public class Debug
         {
-            m_fpsBufferIndex = 0;
+            [SerializeField] public string m_frameDebugAsText;
+            [SerializeField] public int[] fpsBuffer;
+            [SerializeField] public int m_fpsBufferIndex;
+            public int m_framePerSeconds;
+            public int m_averageFramePerSeconds;
+            public int m_highestFramePerSeoncds;
+            public int m_lowestFramePerSeoncds;
+            public int FPS { get { return m_framePerSeconds; } set { m_framePerSeconds = value; } }
+            public int AverageFPS { get { return m_averageFramePerSeconds; } set { m_averageFramePerSeconds = value; } }
+            public int HighestFPS { get { return m_highestFramePerSeoncds; } set { m_highestFramePerSeoncds = value; } }
+            public int LowestFPS { get { return m_lowestFramePerSeoncds; } set { m_lowestFramePerSeoncds = value; } }
         }
-    }
-    void CalculateFPS()
-    {
-        int sum = 0;
-        int highest = 0;
-        int lowest = int.MaxValue;
-        for (int i = 0; i < m_frameRange; i++)
+
+        void Update()
         {
-            int fps = fpsBuffer[i];
-            sum += fps;
-            if (fps > highest)
+            m_debug.FPS = (int)(1f / Time.unscaledDeltaTime);
+            if (m_debug.fpsBuffer == null || m_debug.fpsBuffer.Length != m_frameRangeToCaliber)
             {
-                highest = fps;
+                InitializeBuffer();
             }
-            if (fps < lowest)
+            UpdateBuffer();
+            CalculateFPS();
+            m_debug.m_frameDebugAsText = string.Format("FPS:{0:000}\t average:{1:000}\t lowest:{2:00}\t highest:{3:00}", m_debug.FPS, m_debug.AverageFPS, m_debug.LowestFPS, m_debug.HighestFPS);
+            for (int i = 0; i < m_debugSupportAsTextForFps.Length; i++)
             {
-                lowest = fps;
+                if (m_debugSupportAsTextForFps[i])
+                    m_debugSupportAsTextForFps[i].text = m_debug.m_frameDebugAsText;
             }
         }
-        AverageFPS = sum / m_frameRange;
-        HighestFPS = highest;
-        LowestFPS = lowest;
+
+        void UpdateBuffer()
+        {
+            m_debug.fpsBuffer[m_debug.m_fpsBufferIndex++] = (int)(1f / Time.unscaledDeltaTime);
+            if (m_debug.m_fpsBufferIndex >= m_frameRangeToCaliber)
+            {
+                m_debug.m_fpsBufferIndex = 0;
+            }
+        }
+        void CalculateFPS()
+        {
+            int sum = 0;
+            int highest = 0;
+            int lowest = int.MaxValue;
+            for (int i = 0; i < m_frameRangeToCaliber; i++)
+            {
+                int fps = m_debug.fpsBuffer[i];
+                sum += fps;
+                if (fps > highest)
+                {
+                    highest = fps;
+                }
+                if (fps < lowest)
+                {
+                    lowest = fps;
+                }
+            }
+            m_debug.AverageFPS = sum / m_frameRangeToCaliber;
+            m_debug.HighestFPS = highest;
+            m_debug.LowestFPS = lowest;
+        }
+        void InitializeBuffer()
+        {
+            if (m_frameRangeToCaliber <= 0)
+            { m_frameRangeToCaliber = 1; }
+            m_debug.fpsBuffer = new int[m_frameRangeToCaliber];
+            m_debug.m_fpsBufferIndex = 0;
+        }
     }
-    void InitializeBuffer()
-    {
-        if (m_frameRange <= 0)
-        {m_frameRange = 1;}
-        fpsBuffer = new int[m_frameRange];
-        m_fpsBufferIndex = 0;
-    }
-}
 }

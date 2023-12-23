@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7536101559591685571}
   m_Layer: 0
-  m_Name: Debug| Mouse to banana spawn
+  m_Name: <- Debug| Mouse to banana spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23,12 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961894465351993235}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4820419381009051787}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4820419380382478480
 GameObject:
@@ -41,7 +42,7 @@ GameObject:
   - component: {fileID: 4820419380382478481}
   - component: {fileID: 4820419380382478478}
   m_Layer: 0
-  m_Name: Audio Jimmy
+  m_Name: Audio Voice  Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,12 +55,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4820419380382478480}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4820419381504372856}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &4820419380382478478
 AudioSource:
@@ -71,7 +73,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c902a448928de1040a428729e7569db3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: aea591d9f6cb2c64394f0b49d0e89f23, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0
   m_Pitch: 1
@@ -181,13 +183,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4820419381009051786}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7536101559591685571}
   m_Father: {fileID: 4820419381504372856}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4820419381009051784
 MonoBehaviour:
@@ -201,9 +204,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc7205842eb8744ebd309427ce5723b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_prefab: {fileID: 8082501999617366297, guid: d5b56f7bddfd3c74ea32999dc04fab26, type: 3}
-  m_where: {fileID: 4820419381504372856}
-  m_timeOfDestruction: 20
+  m_prefab: {fileID: 8082501999617366297, guid: d5b56f7bddfd3c74ea32999dc04fab26,
+    type: 3}
+  m_where: {fileID: 0}
+  m_timeOfDestruction: 180
   m_useMouse: 1
 --- !u!1 &4820419381317388367
 GameObject:
@@ -216,7 +220,7 @@ GameObject:
   - component: {fileID: 4820419381317388364}
   - component: {fileID: 4820419381317388365}
   m_Layer: 0
-  m_Name: Audio Hell
+  m_Name: Audio Bip Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -229,12 +233,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4820419381317388367}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4820419381504372856}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &4820419381317388365
 AudioSource:
@@ -246,7 +251,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 42428fb2424b48b42a68bf0a7ecac8f5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0785bec1bd0df3d49b5e46f9e1b7be6f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0
   m_Pitch: 1
@@ -344,7 +349,7 @@ GameObject:
   - component: {fileID: 4820419381504372859}
   - component: {fileID: 4820419381504372857}
   m_Layer: 0
-  m_Name: Jimmy FPS
+  m_Name: Jimmy Audio FPS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -357,15 +362,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4820419381504372858}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.6328125, y: 0.23097003, z: 1.7529306}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4820419381009051787}
   - {fileID: 4820419380382478481}
   - {fileID: 4820419381317388364}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4820419381504372859
 MonoBehaviour:
@@ -379,10 +385,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a63d4f6e5ba31d49972de20a4e8444e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frameRange: 60
-  m_displayFps:
+  m_frameRangeToCaliber: 60
+  m_debugSupportAsTextForFps:
   - {fileID: 0}
-  m_display: 
+  m_debug:
+    m_frameDebugAsText: 
+    fpsBuffer: 
+    m_fpsBufferIndex: 0
+    m_framePerSeconds: 0
+    m_averageFramePerSeconds: 0
+    m_highestFramePerSeoncds: 0
+    m_lowestFramePerSeoncds: 0
 --- !u!114 &4820419381504372857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,16 +409,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_fpsState: {fileID: 4820419381504372859}
-  m_jimmyPlayer: {fileID: 4820419380382478478}
-  m_earHellPlayer: {fileID: 4820419381317388365}
+  m_voiceSound: {fileID: 4820419380382478478}
+  m_alarmSound: {fileID: 4820419381317388365}
   autoStart: 1
   m_boundaryJimmyStart: 60
   m_boundaryJimmyMax: 40
   m_boundaryHellStart: 40
   m_boundaryHellMax: 2
-  m_fps: 0
-  m_jimmy: 0
-  m_jimmyState: 0
-  m_hell: 0
-  m_hellState: 0
-  m_isActive: 0
+  m_isRequestAsActive: 0
+  m_debug:
+    m_fps: 0
+    m_jimmy: 0
+    m_jimmyState: 0
+    m_hell: 0
+    m_hellState: 0
