@@ -1088,6 +1088,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3216088622132489291, guid: e930dc027b6e0764d951361e2a766c3b,
+        type: 3}
+      propertyPath: m_boundaryJimmyStart
+      value: 70
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

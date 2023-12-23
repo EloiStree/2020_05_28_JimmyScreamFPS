@@ -1,15 +1,11 @@
-# # Change Log   
+# Change Log   
 Find here developer log of this package.    
 
+## 1.0.0 - 2023-12-23
+### First release
+- Demo
+- Sample
+- Prefab to drag and drpo
+- Basic of the tool
 
-
-## 0.0.1 - 2020-05-28
-### New
-- done nothing today
-
-## 0.0.1 - 2020-05-28
-### Create first structure of the project
-- create assembly
-- create script 
-- ready to use
 

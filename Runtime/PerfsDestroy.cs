@@ -30,6 +30,7 @@ namespace JimmyScreamFPS
         public void CreateAnInstance()
         {
             GameObject gamo = GameObject.Instantiate(m_prefab, m_where.position, m_where.rotation);
+            gamo.transform.parent = m_where;
             Renderer[] renderer = gamo.GetComponentsInChildren<Renderer>();
             for (int i = 0; i < renderer.Length; i++)
             {
