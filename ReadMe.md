@@ -2,8 +2,8 @@
 # Store Description
 
 ## Video
-[![image](https://github.com/EloiStree/2020_05_28_JimmyScreamFPS/assets/20149493/304bc4be-a57e-4669-917b-f1a64fed229e)](https://youtu.be/sGEdnxj9tV8)
-https://youtu.be/sGEdnxj9tV8  
+[![image](https://github.com/EloiStree/2020_05_28_JimmyScreamFPS/assets/20149493/304bc4be-a57e-4669-917b-f1a64fed229e)](https://www.youtube.com/watch?v=lmMwo4egIPU)
+https://www.youtube.com/watch?v=lmMwo4egIPU
 
 ## Step by step
 
