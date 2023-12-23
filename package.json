@@ -4,7 +4,7 @@
   "version": "0.0.1",                         
   "unity": "2018.1",                             
   "unityRelease": "",                             
-  "description": "This tool allows you to see and hear your game scream when FPS is under 55-66 FPS. Very useful for virtual reality projects and build debugging.",                         
+  "description": "This package is a tool that helps debug the frame rate of the game by making sound. The lower the frame rate goes, the louder the application sound. It helps maintain a frame rate above 70 FPS.",                         
   "keywords": ["Script","Tool"],   
   "relatedPackages":{},     
   "samples" : [],

@@ -31,11 +31,13 @@ _Use three-part semantic versioning (Major.Minor.Patch)._
 ```
 1.0
 ```
+
 ## Changelog
 _Include an entry for every version, with the latest changes first._
-- First release
 
-#v Keywords
+See [ChangeLog.md](ChangeLog.md)
+
+## Keywords
 
 - debug , fps , qa , sound , utility , vr , xr
 
