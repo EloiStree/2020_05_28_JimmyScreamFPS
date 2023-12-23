@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=lmMwo4egIPU
 
 - Open the scene you want to test
 - Go in the prefab folder of the package
-- Drag and drop `Canvàs Jimmy FPS` if you want 2D FPS with sound
+- Drag and drop `Canvas Jimmy FPS` if you want 2D FPS with sound
 - Drag and drop `Jimmy Audio FPS` if you want just 3D audio debugger
 - Configure the Audio Source in the prefab drop to change the sound if needed
 - Change the Boundary FPS in `Jimmy Screamer` if you need to caliber the FPS range.
