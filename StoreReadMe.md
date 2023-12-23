@@ -43,17 +43,25 @@ _Include an entry for every version, with the latest changes first._
 ## Screenshots 
 _Upload images (min width 1200px)_
 
+![image](https://github.com/EloiStree/2020_05_28_JimmyScreamFPS/assets/20149493/fae13bb6-c0ac-4f3a-aebe-364ceb192c51)
 
-## Icon image
+## Image
 
-![image](https://github.com/EloiStree/2020_05_28_JimmyScreamFPS/assets/20149493/b9619dd3-76a3-4731-9465-f6f4835b0315)
-
-
-## Card image
-![image](https://github.com/EloiStree/2020_05_28_JimmyScreamFPS/assets/20149493/ef5fddd5-2546-4401-9688-1eecf56a3ac0)
+### Icon image  
+_Icon image (160 * 160)_  
+![image](https://github.com/EloiStree/2020_05_28_JimmyScreamFPS/assets/20149493/b9619dd3-76a3-4731-9465-f6f4835b0315)  
 
 
-## Cover image
-![image](https://github.com/EloiStree/2020_05_28_JimmyScreamFPS/assets/20149493/8437fbf3-c48e-4283-bebe-f24e8e1663bc)
+### Card image
+_Card image (420 * 280)_  
+![image](https://github.com/EloiStree/2020_05_28_JimmyScreamFPS/assets/20149493/ef5fddd5-2546-4401-9688-1eecf56a3ac0)  
 
+
+### Cover image  
+_Cover image (1950 * 1300)_  
+![image](https://github.com/EloiStree/2020_05_28_JimmyScreamFPS/assets/20149493/8437fbf3-c48e-4283-bebe-f24e8e1663bc)  
+
+### Social Media  
+_Social media image (1200 * 630)_  
+None  
 
