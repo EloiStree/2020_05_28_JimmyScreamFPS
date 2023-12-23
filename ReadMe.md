@@ -17,3 +17,6 @@ https://www.youtube.com/watch?v=lmMwo4egIPU
 - If you hear the sound of a screaming guy you are under the 60 FPS
 - If you hear a bip sound you are under the 40 FPS
 - More the game is low in FSP more the sound are high in volume.
+
+  
+[Read more](StoreReadMe.md)  
