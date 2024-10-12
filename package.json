@@ -7,7 +7,6 @@
   "description": "This package is a tool that helps debug the frame rate of the game by making sound. The lower the frame rate goes, the louder the application sound. It helps maintain a frame rate above 70 FPS.",                         
   "keywords": ["Script","Tool"],   
   "relatedPackages":{},     
-,     
  "samples": [
     {
       "displayName": "Demo Scene",
