@@ -1,7 +1,7 @@
 {                                                                                
   "name": "be.elab.jimmyscreamfps",                              
   "displayName": "Jimmy Scream FPS",                        
-  "version": "0.0.1",                         
+  "version": "2025.1.16",                         
   "unity": "2018.1",                             
   "unityRelease": "",                             
   "description": "This package is a tool that helps debug the frame rate of the game by making sound. The lower the frame rate goes, the louder the application sound. It helps maintain a frame rate above 70 FPS.",                         
